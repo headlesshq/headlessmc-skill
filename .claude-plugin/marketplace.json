@@ -1,0 +1,17 @@
+{
+  "name": "headlesshq",
+  "owner": {
+    "name": "headlesshq",
+    "url": "https://github.com/headlesshq"
+  },
+  "metadata": {
+    "description": "Claude skills for HeadlessMc and Minecraft mod testing."
+  },
+  "plugins": [
+    {
+      "name": "headlessmc",
+      "source": "./",
+      "description": "Download, install and drive HeadlessMc, a command line launcher for Minecraft Java Edition: headless clients, mod loaders, mods, Java, servers, and mod testing in CI with MC-Runtime-Test."
+    }
+  ]
+}
