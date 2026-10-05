@@ -17,7 +17,16 @@ With this skill Claude can:
 
 ## Installation
 
-### Claude Code (plugin marketplace)
+### Claude Code
+
+HeadlessMc is listed in Anthropic's plugin directory, so you can install it
+with one command:
+
+```sh
+claude plugin install headlessmc@anthropic-plugin-directory
+```
+
+### Claude Code (this repository's marketplace)
 
 ```
 /plugin marketplace add headlesshq/headlessmc-skill
@@ -67,7 +76,13 @@ skills/headlessmc/
 
 ## Uninstallation
 
-### Claude Code (plugin marketplace)
+### Claude Code (Anthropic plugin directory)
+
+```sh
+claude plugin uninstall headlessmc@anthropic-plugin-directory
+```
+
+### Claude Code (this repository's marketplace)
 
 Uninstall the plugin, then optionally remove the marketplace:
 
