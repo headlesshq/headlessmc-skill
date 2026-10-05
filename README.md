@@ -65,6 +65,33 @@ skills/headlessmc/
   references/             # details loaded on demand
 ```
 
+## Uninstallation
+
+### Claude Code (plugin marketplace)
+
+Uninstall the plugin, then optionally remove the marketplace:
+
+```
+/plugin uninstall headlessmc@headlesshq
+/plugin marketplace remove headlesshq
+```
+
+Removing the marketplace also uninstalls any plugins installed from it.
+
+### Claude Code (manual)
+
+Delete the skill folder from wherever you copied it:
+
+```sh
+rm -rf ~/.claude/skills/headlessmc
+```
+
+For a project install, delete `.claude/skills/headlessmc` in that project instead.
+
+### Claude.ai and the Claude apps
+
+Open **Settings → Capabilities → Skills** and delete the `headlessmc` skill.
+
 ## Account rules
 
 HeadlessMc is not an official Minecraft product and does not let anyone play
