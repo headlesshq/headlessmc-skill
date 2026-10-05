@@ -7,7 +7,7 @@ for Minecraft Java Edition.</p>
 
 With this skill Claude can:
 
-- install HeadlessMc on Linux, macOS, Windows, Docker or Android (Termux),
+- help you install HeadlessMc on Linux, macOS, Windows, Docker or Android (Termux),
 - launch the client, optionally headless (no GPU/display, e.g. in CI),
 - install vanilla, Fabric, Forge and NeoForge versions,
 - manage accounts, Java runtimes, profiles, and mods/resourcepacks/shaders/datapacks from Modrinth,

@@ -1,7 +1,7 @@
 {
   "name": "headlessmc",
   "version": "1.0.0",
-  "description": "Download, install and drive HeadlessMc, a command line launcher for Minecraft Java Edition: headless clients, mod loaders, mods, Java, servers, and mod testing in CI with MC-Runtime-Test.",
+  "description": "Set up and drive HeadlessMc, a command line launcher for Minecraft Java Edition: headless clients, mod loaders, mods, Java, servers, and mod testing in CI with MC-Runtime-Test.",
   "author": {
     "name": "headlesshq",
     "url": "https://github.com/headlesshq"

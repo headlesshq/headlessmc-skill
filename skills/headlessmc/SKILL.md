@@ -1,6 +1,6 @@
 ---
 name: headlessmc
-description: Download, install and drive HeadlessMc, a command line launcher for Minecraft Java Edition. Use when the user wants to launch the Minecraft client from a terminal (optionally headless, without a GPU/display, e.g. in CI/CD), install vanilla/Fabric/Forge/NeoForge versions, manage Minecraft accounts, Java runtimes, launch profiles, mods/resourcepacks/shaders/datapacks from Modrinth, or set up and run Paper/Fabric/Purpur/Forge/NeoForge/vanilla servers. Also covers controlling a running client through the hmc-specifics mod (gui, click, text, chat, connect), and testing Minecraft mods in CI/GitHub Actions with MC-Runtime-Test (smoke tests, GameTests). Use it whenever the user develops Minecraft mods and wants to test them automatically.
+description: Set up and drive HeadlessMc, a command line launcher for Minecraft Java Edition. Use when the user wants to launch the Minecraft client from a terminal (optionally headless, without a GPU/display, e.g. in CI/CD), install vanilla/Fabric/Forge/NeoForge versions, manage Minecraft accounts, Java runtimes, launch profiles, mods/resourcepacks/shaders/datapacks from Modrinth, or set up and run Paper/Fabric/Purpur/Forge/NeoForge/vanilla servers. Also covers controlling a running client through the hmc-specifics mod (gui, click, text, chat, connect), and testing Minecraft mods in CI/GitHub Actions with MC-Runtime-Test (smoke tests, GameTests). Use it whenever the user develops Minecraft mods and wants to test them automatically.
 ---
 
 # HeadlessMc
@@ -28,8 +28,9 @@ headlessmc --version     # or ./headlessmc-launcher --version
 ```
 
 If one of these works, continue with section 2. Otherwise read
-[references/installation.md](references/installation.md) and install it. In the
-rest of this document `headlessmc` means whichever binary/jar you installed.
+[references/installation.md](references/installation.md) and help the user
+download it from the official GitHub releases. In the rest of this document
+`headlessmc` means whichever binary/jar the user installed.
 
 ## 2. Two ways to run it
 
