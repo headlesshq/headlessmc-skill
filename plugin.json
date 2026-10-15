@@ -18,9 +18,12 @@
         "shortDescription": "Minecraft launcher & mod tests",
         "longDescription": "Set up and drive HeadlessMc, a command line launcher for Minecraft Java Edition: run headless clients, install Fabric/Forge/NeoForge, manage mods, Java and servers, and test mods in CI with MC-Runtime-Test.",
         "developerName": "headlesshq",
-        "category": "Coding",
+        "category": "Developer Tools",
         "capabilities": ["Read", "Write"],
         "websiteURL": "https://headlesshq.github.io/headlessmc/",
+        "supportURL": "https://github.com/headlesshq/headlessmc-skill/issues",
+        "privacyPolicyURL": "https://github.com/headlesshq/headlessmc-skill/blob/main/PRIVACY.md",
+        "termsOfServiceURL": "https://github.com/headlesshq/headlessmc-skill/blob/main/TERMS.md",
         "defaultPrompt": [
           "Launch a headless Fabric 1.21 client with my mod",
           "Set up MC-Runtime-Test for this mod in GitHub Actions",
