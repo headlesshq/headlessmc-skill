@@ -15,7 +15,7 @@
     "com.openai": {
       "interface": {
         "displayName": "HeadlessMc",
-        "shortDescription": "Launch, mod and test Minecraft Java Edition from the terminal",
+        "shortDescription": "Minecraft launcher & mod tests",
         "longDescription": "Set up and drive HeadlessMc, a command line launcher for Minecraft Java Edition: run headless clients, install Fabric/Forge/NeoForge, manage mods, Java and servers, and test mods in CI with MC-Runtime-Test.",
         "developerName": "headlesshq",
         "category": "Coding",
@@ -28,7 +28,7 @@
         ],
         "composerIcon": "./assets/icon.png",
         "logo": "./assets/icon.png",
-        "screenshots": ["./docs/screenshot.png"]
+        "screenshots": ["./assets/screenshot.png"]
       }
     }
   }
