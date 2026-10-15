@@ -26,8 +26,8 @@
           "Set up MC-Runtime-Test for this mod in GitHub Actions",
           "Install and start a Paper server with HeadlessMc"
         ],
-        "composerIcon": "./.claude-plugin/icon.png",
-        "logo": "./.claude-plugin/icon.png",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png",
         "screenshots": ["./docs/screenshot.png"]
       }
     }

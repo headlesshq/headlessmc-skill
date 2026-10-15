@@ -128,6 +128,7 @@ The skill loads automatically when a request matches it, for example:
 .agents/plugins/
   marketplace.json        # Codex marketplace listing this plugin
 plugin.json               # Agent Plugins manifest (Codex, Cursor, Copilot)
+assets/icon.png           # icon referenced by plugin.json
 gemini-extension.json     # Gemini CLI extension manifest
 skills/headlessmc/
   SKILL.md                # main skill instructions
