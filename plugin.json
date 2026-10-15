@@ -1,0 +1,35 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "headlessmc",
+  "version": "1.0.0",
+  "description": "Set up and drive HeadlessMc, a command line launcher for Minecraft Java Edition: headless clients, mod loaders, mods, Java, servers, and mod testing in CI with MC-Runtime-Test.",
+  "author": {
+    "name": "headlesshq",
+    "url": "https://github.com/headlesshq"
+  },
+  "homepage": "https://headlesshq.github.io/headlessmc/",
+  "repository": "https://github.com/headlesshq/headlessmc-skill",
+  "license": "MIT",
+  "keywords": ["minecraft", "headlessmc", "launcher", "modding", "ci", "gametest"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "HeadlessMc",
+        "shortDescription": "Launch, mod and test Minecraft Java Edition from the terminal",
+        "longDescription": "Set up and drive HeadlessMc, a command line launcher for Minecraft Java Edition: run headless clients, install Fabric/Forge/NeoForge, manage mods, Java and servers, and test mods in CI with MC-Runtime-Test.",
+        "developerName": "headlesshq",
+        "category": "Coding",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://headlesshq.github.io/headlessmc/",
+        "defaultPrompt": [
+          "Launch a headless Fabric 1.21 client with my mod",
+          "Set up MC-Runtime-Test for this mod in GitHub Actions",
+          "Install and start a Paper server with HeadlessMc"
+        ],
+        "composerIcon": "./.claude-plugin/icon.png",
+        "logo": "./.claude-plugin/icon.png",
+        "screenshots": ["./docs/screenshot.png"]
+      }
+    }
+  }
+}

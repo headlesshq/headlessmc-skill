@@ -1,11 +1,11 @@
 <!--suppress HtmlDeprecatedAttribute -->
 <h1 align="center" style="font-weight: normal;"><b>HeadlessMc - Skill</b></h1>
-<p align="center">A Claude Skill for
+<p align="center">An agent skill for
 <a href="https://github.com/headlesshq/headlessmc">HeadlessMc</a>, a command line launcher
 for Minecraft Java Edition.</p>
 <p align="center"><img src="docs/screenshot.png" alt="logo"></p>
 
-With this skill Claude can:
+With this skill Claude, Codex, Copilot, Cursor, Gemini and other agents can:
 
 - help you install HeadlessMc on Linux, macOS, Windows, Docker or Android (Termux),
 - launch the client, optionally headless (no GPU/display, e.g. in CI),
@@ -55,6 +55,62 @@ in that project instead.
    ```
 3. Upload `headlessmc.zip` under **Settings → Capabilities → Skills**.
 
+### OpenAI Codex
+
+Add this repository's marketplace:
+
+```sh
+codex plugin marketplace add headlesshq/headlessmc-skill
+```
+
+Then run `/plugins` in Codex, open the **HeadlessHQ** tab, select **HeadlessMc**
+and choose **Install plugin**.
+
+### GitHub Copilot CLI
+
+```sh
+copilot plugin install headlesshq/headlessmc-skill
+```
+
+Or through this repository's marketplace:
+
+```sh
+copilot plugin marketplace add headlesshq/headlessmc-skill
+copilot plugin install headlessmc@headlesshq
+```
+
+### Cursor
+
+Clone the repository into Cursor's local plugins folder, then restart Cursor
+(or run **Developer: Reload Window**):
+
+```sh
+mkdir -p ~/.cursor/plugins/local
+git clone https://github.com/headlesshq/headlessmc-skill.git ~/.cursor/plugins/local/headlessmc
+```
+
+Cursor ignores symlinks that point outside `~/.cursor/plugins/local`, so clone
+or copy the repository there. On Teams and Enterprise plans, an admin has to
+enable **Allow Local Plugin Imports** first.
+
+### Gemini CLI
+
+```sh
+gemini extensions install https://github.com/headlesshq/headlessmc-skill
+```
+
+### Other agents
+
+The [`skills`](https://github.com/vercel-labs/skills) CLI installs the skill
+into most agents that support Agent Skills (Windsurf, Cline, OpenCode, Goose,
+and many more). It asks which agents to install to:
+
+```sh
+npx skills add headlesshq/headlessmc-skill
+```
+
+Add `-g` to install it for your user instead of the current project.
+
 ## Usage
 
 The skill loads automatically when a request matches it, for example:
@@ -67,8 +123,12 @@ The skill loads automatically when a request matches it, for example:
 
 ```
 .claude-plugin/
-  marketplace.json        # marketplace listing this plugin
-  plugin.json             # plugin manifest
+  marketplace.json        # Claude Code marketplace listing this plugin
+  plugin.json             # Claude Code plugin manifest
+.agents/plugins/
+  marketplace.json        # Codex marketplace listing this plugin
+plugin.json               # Agent Plugins manifest (Codex, Cursor, Copilot)
+gemini-extension.json     # Gemini CLI extension manifest
 skills/headlessmc/
   SKILL.md                # main skill instructions
   references/             # details loaded on demand
@@ -106,6 +166,44 @@ For a project install, delete `.claude/skills/headlessmc` in that project instea
 ### Claude.ai and the Claude apps
 
 Open **Settings → Capabilities → Skills** and delete the `headlessmc` skill.
+
+### OpenAI Codex
+
+Run `/plugins` in Codex, open **HeadlessMc** and choose **Uninstall plugin**.
+
+### GitHub Copilot CLI
+
+```sh
+copilot plugin uninstall headlessmc
+```
+
+If you added this repository's marketplace, remove it as well:
+
+```sh
+copilot plugin marketplace remove headlesshq
+```
+
+### Cursor
+
+Delete the plugin folder, then restart Cursor (or run **Developer: Reload Window**):
+
+```sh
+rm -rf ~/.cursor/plugins/local/headlessmc
+```
+
+### Gemini CLI
+
+```sh
+gemini extensions uninstall headlessmc
+```
+
+### Other agents
+
+```sh
+npx skills remove headlessmc
+```
+
+Add `-g` if you installed it globally.
 
 ## Account rules
 
